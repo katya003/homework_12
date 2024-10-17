@@ -19,7 +19,7 @@ public class TestBase {
         Configuration.pageLoadStrategy = "eager";
         Configuration.browserSize = System.getProperty("browserSize");
         Configuration.remote = System.getProperty("remoteURL");
-        Configuration.browser = System.getProperty("browser");
+        Configuration.browser = System.getProperty("browser","chrome");
         Configuration.browserVersion = System.getProperty("browserVersion");
 
         DesiredCapabilities capabilities = new DesiredCapabilities();
